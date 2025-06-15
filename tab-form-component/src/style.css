@@ -1,0 +1,38 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.heading-container {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.heading {
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  margin: 5px;
+  width: 300px;
+}
+
+button {
+  width: 100px;
+  margin: 6px;
+}
+
+.checkbox {
+  /* margin-right: 60px; */
+  /* display: flex;
+  align-content: space-around; */
+  position: relative;
+  display: inline-block;
+}
