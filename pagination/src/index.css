@@ -1,0 +1,66 @@
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  max-width: 1000px; /* or any value like 1000px */
+  margin: 0 auto;     /* centers the grid */
+}
+
+.card{
+  border: 4px solid grey;
+  height:200px;
+  width:200px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  width:150px;
+  height:150px;
+  margin-top:10px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 0.7fr);
+  gap: 1px;
+  padding: 10px;
+  /* margin-left: 60px; */
+
+}
+
+button{
+  color: blue;
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pageBtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  align-items: center;
+}
+
+/* .btn{
+   width: 'fitContent';
+   margin: 3px;
+} */
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.heading{
+ align-items: center;
+}
+
+
+
