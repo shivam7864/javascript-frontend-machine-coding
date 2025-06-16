@@ -1,0 +1,36 @@
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+
+input {
+  margin: 10px;
+  height: 30px;
+  width: 600px;
+}
+
+.searchItem {
+  height: 30px;
+  width:270px;
+}
+
+.searchItem:hover{
+  background-color: rgb(147, 124, 124);
+  cursor: pointer;
+}
+
+.searchResult {
+  width: 300px;
+  max-height: 500px;
+  margin-top: -30px;
+  border: 2px solid black;
+  overflow-y: scroll;
+}
+
+.comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
