@@ -33,6 +33,8 @@ const Pagination = () => {
   return (
     <div>
       <h1>Products Page</h1>
+
+      {/* First Type of Pagination */}
       <div className="pageBtn">
         <button
           disabled={page == 1}
@@ -49,7 +51,6 @@ const Pagination = () => {
                 key={i}
                 onClick={() => setPage(i + 1)}
                 className={page === i + 1 ? "active" : ""}
-                //   textColor = {page === i + 1 ? 'red' : ''}
               >
                 {i + 1}
               </button>
@@ -72,6 +73,7 @@ const Pagination = () => {
         </button>
       </div>
 
+      {/* Second Type of Pagination */}
       <div className="pageBtn">
         <button
           disabled={page == 1}
@@ -132,6 +134,8 @@ const Pagination = () => {
             <Products title={product?.title} image={product?.images} />
           ))}
       </div>
+
+      {/* Third Type of Pagination */}
       <div className="pageBtn">
         <button
           disabled={page == 1}
