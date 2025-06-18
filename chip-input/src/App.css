@@ -1,0 +1,38 @@
+.container {
+  text-align: center;
+}
+
+.input-box{
+  height: 40px;
+  width: 60%;
+  font-size: 30px;
+}
+
+.chip-list{
+  margin:15px ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.chips {
+  border: 1px solid black;
+  border-radius: 20px;
+  min-width:  50px;
+  padding: 10px;
+  margin: 5px;
+  margin-left: 12px;
+  font-size: 20px;
+}
+
+.chip-item{
+  display: flex;
+  margin: 5px;
+}
+
+.delete-chip{
+  margin-left: 20px;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
