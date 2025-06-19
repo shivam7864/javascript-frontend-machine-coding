@@ -1,0 +1,15 @@
+.main{
+    border: 2px solid black;
+    width: 700px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn{
+    font-size: 25px;
+    transform: rotate(180deg);
+}
