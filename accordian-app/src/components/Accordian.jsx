@@ -43,15 +43,24 @@ const Accordian = () => {
   };
   return (
     <div>
-        <h1 style={{textAlign:"center"}}>Accordian App</h1>
+      <h1 style={{ textAlign: "center" }}>Accordian App</h1>
       {data?.map((item, index) => {
         return (
           <div className="main">
             <div className="item" onClick={() => handleOpen(index)}>
               <strong>{item?.title}</strong>
-              <div className='btn' style={{ transform: `rotate(${index === open ? 0 : 180}deg)` }}>^</div>
+              <div
+                className="btn"
+                style={{ transform: `rotate(${index === open ? 0 : 180}deg)` }}
+              >
+                ^
+              </div>
             </div>
-            {open === index && <div className="itemContent">{item.content ? item?.content : "No item available"}</div>}
+            {open === index && (
+              <div className="itemContent">
+                {item.content ? item?.content : "No item available"}
+              </div>
+            )}
           </div>
         );
       })}
