@@ -5,6 +5,7 @@ const InfiniteProducts = () => {
   const [products, setProducts] = useState([]);
   const [skip, setSkip] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [showButton,setShowButton] = useState(false);
   const limit = 10;
   const THRESHOLD = 100;
 
@@ -30,15 +31,28 @@ const InfiniteProducts = () => {
   }, []);
 
   const handleScroll = (e) => {
-    const { scrollTop, scrollHeight, clientHeight } = e.target;
+    const {scrollTop, scrollHeight, clientHeight } = e.target;
+    if(scrollTop>200)setShowButton(true)
     const remainingHeight = scrollHeight - (scrollTop + clientHeight);
     if (remainingHeight < THRESHOLD && !loading) {
       fetchProducts();
     }
   };
 
+  const moveToTop = () => {
+    const container = document.querySelector('.scroll-container');
+    if (container) {
+      container.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  };
+  
   return (
+    <>
     <div
+    className="scroll-container"
       onScroll={handleScroll}
       style={{
         height: "80vh",
@@ -74,10 +88,17 @@ const InfiniteProducts = () => {
           </div>
         ))}
       </div>
+      
       {loading && (
         <p style={{ textAlign: "center" }}>Loading more products...</p>
       )}
+      
     </div>
+    {showButton && (
+      <button onClick={() =>moveToTop()}>Scroll To Top</button>
+    )}
+    
+    </>
   );
 };
 

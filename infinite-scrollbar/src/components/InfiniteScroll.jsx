@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const InfiniteScroll = () => {
     const [data,setData] = useState([...new Array(40)]);
     const [loading,setLoading] = useState(false);
+    const [scrollToTop,setScrollToTop] = useState(false);
     const THRESHOLD = 20;
 
     const loadMore = () =>{
@@ -34,6 +35,7 @@ const InfiniteScroll = () => {
             )
         })
       }
+      <button>Scroll To Top</button>
     </div>
   )
 }
