@@ -1,0 +1,9 @@
+.row{
+  margin: 15px;
+}
+
+.infinite {
+  height: 800px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
