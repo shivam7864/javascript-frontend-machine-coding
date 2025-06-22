@@ -1,0 +1,41 @@
+.sortable-list-x{
+  height: 70vh;
+  overflow: auto;
+  width: 42vw;
+  margin-inline: auto;
+  margin-top: 50px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.row-x{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  height: 42px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+  color: #333333;
+}
+
+.row-x:active{
+  cursor: grabbing;
+}
+
+.grabbing{
+  background-color: lightsalmon;
+}
+
+.drop-zone{
+  background-color: rgb(117, 117, 242);
+}
+
+.draggable-top{
+  border-bottom: 3px solid red;
+}
+
+.draggable-bottom{
+  border-bottom: 3px solid green;
+}
