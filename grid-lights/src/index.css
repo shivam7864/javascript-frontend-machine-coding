@@ -1,0 +1,29 @@
+.grid-light{
+  height: 30vw;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 100px;
+}
+
+.grid-row{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.light{
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+}
+
+.off{
+  background-color: brown;
+}
+
+.on{
+  background-color: blueviolet;
+}
