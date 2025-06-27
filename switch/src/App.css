@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.switch input {
+  opacity: 0;
+}
+
+.switch {
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  cursor: pointer;
+}
+
+.switch-label {
+  cursor: pointer;
+}
+
+
+.switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #ccc;
+}
+
+.switch .slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #b85353;
+  transition: all 0.3s ease;
+}
+
+.switch:has(input:checked) .slider {
+  background-color: #000;
+}
+
+.switch:has(input:checked) .slider::before {
+  left: calc(100% - 22px);
+}
+
+.switch:has(input:focus-visible) .slider{
+  outline: 4px solid green;
+}
