@@ -1,0 +1,6 @@
+ const [lowerCase, setLowerCase] = useState(true)
+  const [upperCase, setupperCase] = useState(false)
+  const [numbers, setNumbers] = useState(false)
+  const [symbols, setSymbols] = useState(false)
+
+  
